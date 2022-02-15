@@ -1,0 +1,11 @@
+curl -X POST http://192.168.1.6:5001/connect_node
+-H 'Content-Type: application/json'
+-d '{"nodes": ["http://192.168.1.6:5002", "http://192.168.1.6:5003"]'
+
+
+
+
+
+curl -X POST http://192.168.1.6:5001/add_transaction
+-H 'Content-Type: application/json'
+-d '{"sender":"Jest","receiver":"F","amount":1}'
